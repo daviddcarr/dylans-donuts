@@ -24,12 +24,34 @@ body
     justify-content: center;
     z-index: 10;
     position: absolute;
+
+    background: rgb(237,240,255);
+    background: -moz-radial-gradient(circle, rgba(237,240,255,0) 0%, rgba(199,156,250,0.4051995798319328) 100%);
+    background: -webkit-radial-gradient(circle, rgba(237,240,255,0) 0%, rgba(199,156,250,0.4051995798319328) 100%);
+    background: radial-gradient(circle, rgba(237,240,255,0) 0%, rgba(199,156,250,0.4051995798319328) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#edf0ff",endColorstr="#c79cfa",GradientType=1);
 }
-.heading h1 {
+.heading-container {
+    position: relative;
+}
+.heading-container h1 {
     font-family: 'Paytone One', sans-serif;
-    font-size: 72px;
-    color: #cf99aa;
-    text-shadow: 0px 3px 5px #544D4D, 0px 0px 5px white, 0px 0px 20px white, 0px 0px 50px white;
+    font-size: 86px;
+    color: #b6496b;
+    text-shadow: 0px 3px 3px rgba(112,53,99,0.75);
+    display: block;
+    /* text-shadow: 0px 3px 5px #544D4D, 0px 0px 5px white, 0px 0px 20px white, 0px 0px 50px white; */
+}
+.heading-container h2 {
+    font-family: 'Ms Madi', cursive;
+    color: #2c1e22;
+    font-size: 52px;
+    display: block;
+
+    position: absolute;
+    bottom: -25px;
+    right:-10px;
+    transform: rotate(-5deg);
 }
 
 .webgl
