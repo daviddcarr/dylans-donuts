@@ -37,6 +37,7 @@ body
 .heading-container h1 {
     font-family: 'Paytone One', sans-serif;
     font-size: 86px;
+    font-size: clamp(2.15rem, 10vw, 5.5rem); 
     color: #b6496b;
     text-shadow: 0px 3px 3px rgba(112,53,99,0.75);
     display: block;
@@ -46,10 +47,11 @@ body
     font-family: 'Ms Madi', cursive;
     color: #2c1e22;
     font-size: 52px;
+    font-size: clamp(1.5rem, 6vw, 3.25rem);
     display: block;
 
     position: absolute;
-    bottom: -25px;
+    bottom: calc( -1 * clamp(10px, 4vw, 25px));
     right:-10px;
     transform: rotate(-5deg);
 }
